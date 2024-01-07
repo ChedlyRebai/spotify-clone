@@ -46,7 +46,7 @@ const Modal = ({children, description,isOpen,onChange,title}:ModalProps) => {
             <Dialog.Close asChild>
               <button className="text-neutral-400 hover:text-white
               absolute top-2 right-2 inline-flex h-5 w-5 appearance-none items-center justify-center 
-              rounded-full bg-neutral-700 
+              rounded-full  
               ">
                 <IoMdClose size={30} />
               </button>
