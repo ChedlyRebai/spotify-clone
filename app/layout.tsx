@@ -1,6 +1,7 @@
 import Sidebar from "@/components/Sidebar";
 import ModalProvider from "@/providers/ModalProvider";
 import SupabaseProvider from "@/providers/SupabaseProvider";
+import ToastProvider from "@/providers/ToastProvider";
 import UserProvider from "@/providers/UserProvider";
 import type { Metadata } from "next";
 import { Figtree } from "next/font/google";
@@ -19,14 +20,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    
     <html lang="en">
       <body className={inter.className}>
-      <SupabaseProvider>
-        <UserProvider>
-          <ModalProvider/>
+        <ToastProvider />
+        <SupabaseProvider>
+          <UserProvider>
+            <ModalProvider />
             <Sidebar>{children}</Sidebar>
-        </UserProvider>
-      </SupabaseProvider>
+          </UserProvider>
+        </SupabaseProvider>
       </body>
     </html>
   );
