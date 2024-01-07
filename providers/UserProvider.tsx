@@ -2,7 +2,7 @@
 
 import { MyUserContextProvider } from "@/hooks/useUser"
 
-type UserProviderProps {
+type UserProviderProps ={
     children: React.ReactNode
 }
 
