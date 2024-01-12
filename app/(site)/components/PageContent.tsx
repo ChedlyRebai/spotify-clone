@@ -1,5 +1,6 @@
 "use client"
 
+import SongItem from "@/components/SongItem"
 import { Song } from "@/types"
 
 type Props = {
@@ -28,7 +29,7 @@ const PageContent = ({songs}:Props) => {
     >
       {
         songs.map((song)=>(
-            <SongItem 
+            <SongItem
             key={song.id}
             onClick={()=>{}}
             data={song}
