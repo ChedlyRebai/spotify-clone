@@ -21,7 +21,7 @@ const getSongsByUserId=async ():Promise<Song[]>=>{
        }
 
        
-    return data as any;
+    return data as any || [];
 }
 
 export default getSongsByUserId;

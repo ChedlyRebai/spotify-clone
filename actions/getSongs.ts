@@ -14,7 +14,7 @@ const getSongs=async ():Promise<Song[]>=>{
 
      if(error) throw error;
 
-    return data as any;
+    return data as any || [];
 }
 
 export default getSongs;
