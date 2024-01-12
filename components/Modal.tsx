@@ -14,7 +14,6 @@ const Modal = ({children, description,isOpen,onChange,title}:ModalProps) => {
     open={isOpen}
     onOpenChange={onChange}
     defaultOpen={true}
-
     >
       <Dialog.Portal>
         <Dialog.Overlay
