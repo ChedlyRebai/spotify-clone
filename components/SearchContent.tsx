@@ -1,5 +1,6 @@
 "use client";
 import { Song } from "@/types";
+import LikedButton from "./LikedButton";
 import MediaItem from "./MediaItem";
 
 type SearchContentProps = {
@@ -21,6 +22,7 @@ const SearchContent = ({ songs }: SearchContentProps) => {
           <div className="flex-1">
             <MediaItem onClick={() => {}} key={index} data={song} />
           </div>
+          <LikedButton songId={song.id} />
         </div>
       ))}
     </div>
