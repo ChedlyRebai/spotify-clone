@@ -40,9 +40,14 @@ const Library = ({songs}:LibraryProps) => {
       </div>
 
       <div className="flex flex-col gap-y-2 mt-4 px-3">
-        {songs.map((song, index) => (
+        {
+        songs.length===0?
+        <p className='text-neutral-400 font-medium text-md'>No songs</p>
+        :
+        (songs.map((song, index) => (
           <MediaItem key={index} data={song} />
         ))
+        )
         }
       </div>
     </div>
