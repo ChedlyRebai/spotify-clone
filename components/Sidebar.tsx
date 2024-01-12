@@ -56,7 +56,7 @@ const Sidebar = ({ children,songs }: SidebarProps) => {
         </Box>
 
         <Box className="overflow-y-auto h-full">
-          <Library />
+          <Library songs={songs} />
         </Box>
       </div>
 
