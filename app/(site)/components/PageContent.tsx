@@ -1,6 +1,7 @@
 "use client"
 
 import SongItem from "@/components/SongItem"
+import usePlayer from "@/hooks/usePlayer"
 import { Song } from "@/types"
 
 type Props = {
@@ -8,6 +9,8 @@ type Props = {
 }
 const PageContent = ({songs}:Props) => {
 
+  const onplay= usePlayer();
+  
     if(songs.length===0){
         return (
             <div className="mt-4 text-neutral-400">
@@ -31,7 +34,7 @@ const PageContent = ({songs}:Props) => {
         songs.map((song)=>(
             <SongItem
             key={song.id}
-            onClick={()=>{}}
+            onClick={(id:string)=>{onplay.}}
             data={song}
             />
             ))
