@@ -20,7 +20,7 @@ const SearchContent = ({ songs }: SearchContentProps) => {
       {songs.map((song, index) => (
         <div key={song.title} className="flex items-center gap-x-4 w-full">
           <div key={song.title} className="flex-1">
-            <MediaItem key={song.title}  onClick={() => {}} key={index} data={song} />
+            <MediaItem key={song.title}  onClick={() => {}}  data={song} />
           </div>
           <LikedButton key={song.title} songId={song.id} />
         </div>
